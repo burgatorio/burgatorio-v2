@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Burgatorio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="app">
+    <div id="screen-home" class="screen active">
+      <h1>¿CUÁL SERÁ TU PECADO?</h1>
+      <div class="categories">
+        <div class="category" data-category="ira">🔥 IRA</div>
+        <div class="category" data-category="gula">🍔 GULA</div>
+        <div class="category" data-category="lujuria">💋 LUJURIA</div>
+        <div class="category" data-category="envidia">👁️ ENVIDIA</div>
+      </div>
+    </div>
+
+    <div id="screen-product" class="screen">
+      <button id="btn-back" class="btn-back">←</button>
+      <div id="product-detail"></div>
+    </div>
+
+    <div id="screen-cart" class="screen">
+      <button id="btn-back-cart" class="btn-back">←</button>
+      <h2>CESTA DE LOS PECADOS</h2>
+      <div id="cart-items"></div>
+      <div id="cart-total"></div>
+      <button id="btn-checkout" class="btn-primary">CONFIRMAR CONDENA</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
